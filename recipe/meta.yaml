@@ -11,9 +11,6 @@ source:
   url: https://github.com/xia2/xia2/archive/refs/tags/v{{ version }}.tar.gz
   sha256: efcfa0a1ae67236d08947e17c977cc5e0142786ebdc1ace7d2f916606ec3d20e
   folder: xia2
-  patches:
-    - multiplex_test_fix.diff
-    - test_prot_k_multiwave_double_fix.diff
 
 build:
   noarch: python
