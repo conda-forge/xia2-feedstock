@@ -56,17 +56,18 @@ build:
 
 requirements:
   host:
-    - python >=3.9
-    - pip
     - cctbx-base
-    - dxtbx ={{ version_xy }}
     - dials ={{ version_xy }}
+    - dxtbx ={{ version_xy }}
+    - pip
+    - python >=3.9
+    - setuptools
   run:
     - {{ pin_compatible('cctbx-base') }}
-    - {{ pin_compatible('dxtbx', max_pin='x.x', lower_bound=version_xy) }}
     - {{ pin_compatible('dials', max_pin='x.x', lower_bound=version_xy) }}
-    - python >=3.9
+    - {{ pin_compatible('dxtbx', max_pin='x.x', lower_bound=version_xy) }}
     - jinja2
+    - python >=3.9
     - pyyaml
     - tabulate
 
