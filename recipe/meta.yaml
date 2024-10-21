@@ -1,5 +1,5 @@
 {% set name = "xia2" %}
-{% set version = "3.18.0" %}
+{% set version = "3.22.1" %}
 {% set version_parts = version.split('.') %}
 {% set version_xy = version_parts[0] ~ '.' ~ version_parts[1] %}
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/xia2/xia2/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: efcfa0a1ae67236d08947e17c977cc5e0142786ebdc1ace7d2f916606ec3d20e
+  sha256: a332efe46def55c3a4200e17c93390e961ba95f5901c3682b12adc758ec37826
   folder: xia2
 
 build:
@@ -58,7 +58,7 @@ requirements:
   host:
     - python >=3.9
     - pip
-    - cctbx-base >=2023.10
+    - cctbx-base
     - dxtbx ={{ version_xy }}
     - dials ={{ version_xy }}
   run:
