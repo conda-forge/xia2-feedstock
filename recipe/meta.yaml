@@ -1,5 +1,5 @@
 {% set name = "xia2" %}
-{% set version = "3.22.1" %}
+{% set version = "3.23.0" %}
 {% set version_parts = version.split('.') %}
 {% set version_xy = version_parts[0] ~ '.' ~ version_parts[1] %}
 
@@ -9,12 +9,12 @@ package:
 
 source:
   url: https://github.com/xia2/xia2/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: a332efe46def55c3a4200e17c93390e961ba95f5901c3682b12adc758ec37826
+  sha256: cf652ee59e024e6af636e500e02318c09b3cbaf6398f3535a5e8799764c47f85
   folder: xia2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install ./xia2 -vv
   entry_points:
     - dev.xia2.check_mosaic = xia2.cli.check_mosaic:run
