@@ -2,6 +2,7 @@
 {% set version = "3.23.0" %}
 {% set version_parts = version.split('.') %}
 {% set version_xy = version_parts[0] ~ '.' ~ version_parts[1] %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
