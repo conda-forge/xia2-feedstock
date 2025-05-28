@@ -1,5 +1,5 @@
 {% set name = "xia2" %}
-{% set version = "3.24.1" %}
+{% set version = "3.24.3" %}
 {% set version_parts = version.split('.') %}
 {% set version_xy = version_parts[0] ~ '.' ~ version_parts[1] %}
 {% set python_min = "3.10" %}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://github.com/xia2/xia2/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 6895e7d194ebc21826d48520537578d9c4cf712bd2ae13119d0b378887a41911
+  sha256: 392708bbe66bdc6306fc09b4ae024cecd7767dfe9229e412314a68a1d0be1c71
   folder: xia2
 
 build:
